@@ -6,10 +6,13 @@
         <div v-for="recipe in recipes" :key="recipe.name">
           <h1>If you wish to create
             <span style="color: red">{{ recipe.name }} </span>from scratch, you must first create the universe.</h1>
+            <!--TODO: Add refresh page function to button -->
           <button>- Karl Sayagain</button>
           <div class="row">
             <p>For a lesser challenge, you could start from here:
-              <span style="color: red">{{ recipe.url }}</span>.</p>
+              <span style="color: red">
+                <a target="_blank" v-bind:href="recipe.url">{{ recipe.url }}.</a>
+              </span></p>
           </div>
         </div>
       </div>
@@ -21,16 +24,23 @@
   </div>
 </template>
 
+
 <script>
 import recipes from '../recipes.js'
+
 
   export default {
   name: 'Featured',
   data () {
     return recipes
   },
-  components: {
-  },  
-}  
+  methods: {
+    showRandom: function() {
+      return recipes[Math.floor(Math.random() * recipes.length)];
+    }
+  }
+
+  }
+  
 </script>
 

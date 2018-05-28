@@ -5,15 +5,15 @@
     <section>
       <h1>Contributing is easy. Just fill out the form below :)</h1>
       <!-- The above form looks like this -->
-      <form>
+       <form id="form" method="post" v-on:submit.prevent="handleSubmit">
         <div class="row">
           <div class="six columns">
-            <label for="exampleEmailInput">Recipe Name</label>
-            <input class="u-full-width" placeholder="Pineapple Upside-down Cake" id="exampleTextInput" type="text">
+            <label class="label" for="name">Recipe Name</label>
+            <input class="u-full-width" v-model="recipe.name" placeholder="Pineapple Upside-down Cake" id="exampleTextInput" type="text">
           </div>
           <div class="six columns">
-            <label for="exampleRecipientInput">Recipe URL</label>
-            <input class="u-full-width" placeholder="https://www.marthastewart.com/343591/pineapple-upside-down-cake" id="exampleUrlInput"
+            <label class="label" for="link">Recipe URL</label>
+            <input class="u-full-width" v-model="recipe.link" placeholder="https://www.marthastewart.com/343591/pineapple-upside-down-cake" id="exampleUrlInput"
               type="url">
           </div>
         </div>
@@ -28,9 +28,24 @@
 
 
 <script>
+import axios from 'axios';
+
 export default {
-  name: 'Contribute'
+  data() {
+    return {
+      recipe: {
+        name: '',
+        link: ''
+      }
+    }
+  },
+  methods: {
+    handleSubmit() {    
+
 }
+},
+}
+
 </script>
 
 <style scoped>
