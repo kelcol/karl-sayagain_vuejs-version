@@ -3,10 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
-
 import VueFire from 'vuefire';
+import VueAnalytics from 'vue-analytics'
+
 Vue.use(VueFire);
+
+Vue.use(VueAnalytics, {
+  id: 'UA-120008455-1',
+  router
+})
 
 Vue.config.productionTip = false
 
