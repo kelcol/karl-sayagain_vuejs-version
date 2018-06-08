@@ -15,7 +15,7 @@
     </div>
 
     <div class="u-pull-right contribute">
-       <router-link class="button button-contribute" v-bind:to="{name: 'Contribute'}" @click="goToContributeNav">Contribute!</router-link>
+       <router-link class="button button-contribute" v-bind:to="{name: 'Contribute'}" @click="goToContributeNav()">Contribute!</router-link>
     </div>
 
     </div>
