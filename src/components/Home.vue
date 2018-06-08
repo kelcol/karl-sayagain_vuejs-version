@@ -23,7 +23,7 @@
     </div>
     <!--TODO: Make contribute link flashier -->
     <router-link class="nav-link" v-bind:to="{name: 'Contribute'}">
-      <button class="button-primary" @click="goToContribute()>Contribute a Recipe</button>
+      <button class="button-primary" @click="goToContribute()">Contribute a Recipe</button>
     </router-link>
   </div>
   
