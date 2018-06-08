@@ -10,16 +10,12 @@ Vue.use(VueFire);
 
 Vue.use(VueAnalytics, {
   id: 'UA-120008455-1',
-  commands: {
-    trackName (name = 'unknown') {
-       this.$ga.event('randomClicks', 'click', 'name', name);
-    },
     autoTracking: {
       screenview: true
     }
  },
   router
-})
+)
 
 Vue.config.productionTip = false
 
