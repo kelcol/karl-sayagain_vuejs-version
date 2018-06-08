@@ -1,5 +1,8 @@
 <template>
   <div id="contribute" class="container">
+    
+    <!--TODO: Add form validation!-->
+    
     <section>
       <h1>Contributing is easy. Just fill out the form below :)</h1>
       <!-- The above form looks like this -->
@@ -17,7 +20,6 @@
             <input class="u-full-width" v-model="newRecipe.link" placeholder="https://www.marthastewart.com/343591/pineapple-upside-down-cake" id="exampleUrlInput"
               type="url">
           </div>
-        
         
         </div>
         <input class="button-primary" value="Submit" type="submit">
@@ -57,7 +59,7 @@ export default {
 
 <style scoped>
 h1 {
-  padding: 10%;
+  padding: 10% 10% 3% 10%;
 }
 
 h2 {
