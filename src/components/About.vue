@@ -18,7 +18,7 @@
         Sagan and also serves as crowdsourced recipe repository. I hope you'll contribute a recipe while you're here!</p>
 
       <p>"Karl Sayagain" is a series of "Hello World" type projects completed using different languages, all with a similar
-        theme of playing tribute to Carl Sagan. Here's a list of other Karl Sayagains put into the world:</p>
+        theme of paying tribute to Carl Sagan. Here's a list of other Karl Sayagains put into the world:</p>
 
       <ul>
         <li>Random Recipe Displayer (PHP & XML) -
