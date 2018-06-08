@@ -23,7 +23,7 @@
     </div>
     <!--TODO: Make contribute link flashier -->
     <router-link class="nav-link" v-bind:to="{name: 'Contribute'}">
-      <button class="button-primary">Contribute a Recipe</button>
+      <button class="button-primary" @click="goToContribute()>Contribute a Recipe</button>
     </router-link>
   </div>
   
@@ -48,7 +48,8 @@ export default {
   computed: {
     randomRecipe: function() {
       // TODO: Figure out less hacky and more accurate way to show random
-      return Math.floor(Math.random() * 30)
+      return Math.floor(Math.random() * 30);
+      console.log('computing random...')
     }
   },
   methods: {
@@ -56,6 +57,11 @@ export default {
       // TODO: Figure out less hacky way to re-render the index number
       this.$router.go(0);
       this.$ga.event('Refresh Page', 'Button Click','Get New Recipe')
+      console.log('refreshing page...')
+    },
+    goToContribute() {
+      this.$ga.event('Contribute Form', 'Button Click','Used Main Contribute Button');
+      console.log('going to form...')
     }
   }
 }
