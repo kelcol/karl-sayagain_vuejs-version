@@ -33,6 +33,7 @@
 
 <script>
 import firebase from '@/components/firebase-init';
+import contribute from '@/components/Contribute'
 
 export default {
   name: 'Home',
@@ -41,7 +42,7 @@ export default {
   },
   data () {
   return {
-    selected: null
+    selected: null,
   }
   },
   computed: {
@@ -54,6 +55,7 @@ export default {
     refreshPage() {
       // TODO: Figure out less hacky way to re-render the index number
       this.$router.go(0);
+      this.$ga.event('Refresh Page', 'Button Click','Get New Recipe')
     }
   }
 }

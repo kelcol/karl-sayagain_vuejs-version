@@ -41,7 +41,8 @@ export default {
       newRecipe: {
         name: '',
         link: ''
-      }
+      },
+      name: 'John'
     }
   },
   methods: {
@@ -50,6 +51,7 @@ export default {
       this.newRecipe.name = '';
       this.newRecipe.link ='';
       console.log("recipe added");
+      this.$ga.event('Contributed Recipe', 'Submit')
     } 
 
 }
