@@ -3,6 +3,7 @@
 > A Vue.js project
 
 This web application is a work in progress. Some things that still need to be added are:
+- [ ] Do some testing/fixing for non-ff/chrome browsers (safari, opera, etc.)
 - [ ] Form validation
 - [ ] Error/success messaging for form
 - [ ] Legit length of recipes array used to randomly display recipe (so new ones added to firebase will show)
