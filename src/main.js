@@ -11,10 +11,13 @@ Vue.use(VueFire);
 Vue.use(VueAnalytics, {
   id: 'UA-120008455-1',
     autoTracking: {
-      screenview: true
+      exception: true
     }, 
-  router
-})
+  router,
+  debug: {
+    enabled: true
+  }
+});
 
 Vue.config.productionTip = false
 
