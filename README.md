@@ -1,6 +1,14 @@
-# karl-vue-version
+# Karl Sayagain: Vue.js Version
 
 > A Vue.js project
+
+This web application is a work in progress. Some things that still need to be added are:
+- [ ] Form validation
+- [ ] Error/success messaging for form
+- [ ] Legit length of recipes array used to randomly display recipe (so new ones added to firebase will show)
+- [ ] Sprucing up, maybe custom styling and not Skeleton
+- [ ] Assorted updates informed by usability analysis/testing
+
 
 ## Build Setup
 
