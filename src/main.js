@@ -6,6 +6,7 @@ import router from './router'
 import VueFire from 'vuefire';
 import VueAnalytics from 'vue-analytics'
 
+
 Vue.use(VueFire);
 
 Vue.use(VueAnalytics, {
