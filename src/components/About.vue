@@ -32,7 +32,7 @@
           <a target="_blank" href="https://github.com/audiblediner/karl-sayagain_php-version" class="source-link">
             Source Code</a>
         </li>
-        <li>Twitter Bot (Python) -
+        <li>Twitter Bot (JavaScript) -
           <a target="_blank" href="https://twitter.com/KarlSayagain" class="demo-link">
             Demo</a>
           <a target="_blank" href="https://github.com/audiblediner/karl-sayagain" class="source-link">
