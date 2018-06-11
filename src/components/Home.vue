@@ -19,17 +19,19 @@
     </div>
 
     <featured></featured>
-
+     <button @click="refreshPage">Refresh Recipe</button>
+    
     <!--TODO: Make contribute link flashier -->
     <router-link class="nav-link" v-bind:to="{name: 'Contribute2'}">
       <button class="button-primary" @click="goToContribute">Contribute a Recipe</button>
     </router-link>
+    
 
   </div>
 </template>
 
 <script>
-import firebase from '@/components/firebase-init'
+import firebase from '@/common/firebase-init'
 import contribute1 from '@/components/Contribute1'
 import contribute2 from '@/components/Contribute2'
 import about from '@/components/About'
@@ -42,15 +44,8 @@ export default {
   },
   data () {
   return {
-    selected: null,
+
   }
-  },
-  computed: {
-    randomRecipe: function() {
-      // TODO: Figure out less hacky and more accurate way to show random
-      return Math.floor(Math.random() * 30);
-      console.log('computing random...')
-    }
   },
   components: {
     featured,
@@ -74,33 +69,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-h1 {
-  padding: 10% 10% 3% 10%;
-}
-.nav {
-  position:absolute;
-  top:2%;
-  }
-
-.featured {
-  color: coral;
-}
-.contribute {
-  position:absolute;
-  top:2%;
-  right: 2%
-}
-
-.button-contribute {
-  background-color: coral;
-  color: white;
-  border: coral;
-}
-
-.button-contribute:hover {
-  background-color: rgb(253, 167, 136);
-  border: rgb(253, 167, 136);
-}
-</style>

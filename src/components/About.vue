@@ -59,10 +59,6 @@ export default {
 </script>
 
 <style>
-h1 {
-  padding: 10% 10% 3% 10%;
-}
-
 .nav {
   position:absolute;
   top:2%;
