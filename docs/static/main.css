@@ -1,0 +1,65 @@
+.nav {
+  position:absolute;
+  top:2%;
+  left: 2%
+  }
+
+.container {
+    margin-top: 15%;
+    margin-bottom: 2%
+
+  }
+
+
+.featured {
+  color: coral;
+}
+
+.cite {
+  font-size: 3rem;
+  font-style: italic;
+  color: coral;
+  text-align: right;
+}
+
+.contribute {
+  position:absolute;
+  top:2%;
+  right: 2%
+}
+
+.button-contribute {
+  background-color: coral;
+  color: white;
+  border: coral;
+}
+
+.button-contribute:hover {
+  background-color: rgb(253, 167, 136);
+  border: rgb(253, 167, 136);  
+  color: white
+}
+
+.error {
+  position: relative;
+  top: 5%;
+  color: coral;
+}
+
+.success {
+  color: rgb(48, 173, 90);
+}
+
+#circle {
+  width: 20rem;
+  height: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: rgb(48, 173, 90);
+}
