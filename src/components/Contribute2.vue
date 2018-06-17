@@ -88,8 +88,7 @@ import firebase from '@/common/firebase-init';
       this.newRecipe.name = '';
       this.newRecipe.link = '';
       this.attemptSubmit = false;
-      this.postStatus = true
-      console.log("recipe added");
+      this.postStatus = true;
       this.$ga.event('Contributed Recipe', 'Submit')
       },
       returnToForm () {

@@ -56,15 +56,12 @@ export default {
       e.preventDefault();
       this.$router.go(0);
       this.$ga.event('Refresh Page', 'Button Click','Get New Recipe')
-      console.log('refreshing page...')
     },
     goToContributeNav() {
       this.$ga.event('Contribute Form', 'Button Click','Used Nav Contribute Button');
-      console.log('going to form from nav...')
     },
     goToContribute() {
       this.$ga.event('Contribute Form', 'Button Click','Used Main Contribute Button');
-      console.log('going to form...')
     },
   }
 }

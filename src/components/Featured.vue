@@ -3,7 +3,7 @@
           <div class="row">
         <!--TODO: Add loading spinner-->
 
-        <div v-for="(recipe, index) in recipes" :key="index" v-if="index == randomRecipe">
+        <div v-for="(recipe, index) in recipes" :key="index" v-if="index === randomRecipe">
 
           <div class="container">
             <h1>If you wish to make
@@ -30,19 +30,14 @@ export default {
   },
   data () {
   return {
-    selected: null,
   }
   },
   computed: {
-    randomRecipe: function() {      
-      // TODO: Figure out less hacky and more accurate way to show random
+    randomRecipe: function() {
       return Math.floor(Math.random() * this.recipes.length);
-      console.log('computing random...')
     }
   },
   methods: {
-
   }
 }
-  
 </script>
